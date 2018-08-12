@@ -17,5 +17,6 @@ cmake_policy(SET CMP0063 NEW)
 
 project(phive)
 
+set(SDL2_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/sdl2/include)
 add_subdirectory(sdl2)
 add_subdirectory(executables)

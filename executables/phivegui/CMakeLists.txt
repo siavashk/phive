@@ -1,3 +1,3 @@
+include_directories(${SDL2_INCLUDE_DIR})
 add_executable(phivegui main.cpp)
-
-target_link_libraries(phivegui ${PROJECT_BINARY_DIR}/sdl2/libSDL2.a)
+target_link_libraries(phivegui SDL2main SDL2-static)
