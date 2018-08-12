@@ -17,4 +17,5 @@ cmake_policy(SET CMP0063 NEW)
 
 project(phive)
 
+add_subdirectory(sdl2)
 add_subdirectory(executables)
