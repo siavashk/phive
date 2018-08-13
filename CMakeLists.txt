@@ -15,8 +15,16 @@ cmake_policy(SET CMP0054 NEW)
 cmake_policy(SET CMP0058 NEW)
 cmake_policy(SET CMP0063 NEW)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
+
+include("build/PrecompiledHeader.cmake")
+
 project(phive)
 
 set(SDL2_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/sdl2/include)
+set(CORE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/core)
+
 add_subdirectory(sdl2)
+add_subdirectory(core)
 add_subdirectory(executables)
