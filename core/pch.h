@@ -3,5 +3,10 @@
 
 #include <SDL.h>
 #include <memory>
+#include <vector>
+#include <iostream>
+#include <functional>
+#include <map>
+#include <queue>
 
 #endif
